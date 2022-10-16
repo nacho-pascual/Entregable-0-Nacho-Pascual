@@ -14,15 +14,15 @@ def timer():
     
     data={"quote":frase,"character":personaje}
     if personaje == 'Homer Simpson':
-      with open('Simpsons/Homer/mycsvfile.csv', 'a', newline='') as f:
+      with open('Maggie Simpson/Homer/mycsvfile.csv', 'a', newline='') as f:
         a=csv.DictWriter(f,data.keys())
         a.writerow(data) 
     elif personaje == 'Lisa Simpson':
-      with open('Simpsons/Lisa/mycsvfile.csv', 'a', newline='') as g: 
+      with open('Maggie Simpson/Lisa/mycsvfile.csv', 'a', newline='') as g: 
         a=csv.DictWriter(g,data.keys())
         a.writerow(data)
     else:
-      with open('Simpsons/General/mycsvfile.csv', 'a', newline='') as h: 
+      with open('Maggie Simpson/General/mycsvfile.csv', 'a', newline='') as h: 
         a=csv.DictWriter(h,data.keys())
         a.writerow(data)
 

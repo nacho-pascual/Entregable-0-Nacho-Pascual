@@ -1,11 +1,12 @@
 FROM python
 
 RUN APT GET UPDATE
-WORKDIR /app
 
-COPY python_code/main.py /app
-COPY python_code/requirements.txt /app
 
+COPY ./main.py /app/
+COPY ./requirements.txt /app/
+
+WORKDIR /app/
 
 RUN mkdir "Homer Simpson"
 RUN mkdir "Lisa Simpson"
