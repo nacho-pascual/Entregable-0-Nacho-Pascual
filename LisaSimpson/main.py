@@ -19,7 +19,12 @@ def timer():
       print(x[contador],":",(contador +1))
       palabras[x[contador]]=(contador +1)
     print(palabras)
-    time.sleep(3) 
+    time.sleep(3)
+
+    
+    with open('LisaSimpson/contador.csv', 'a', newline='') as x:
+        a=csv.DictWriter(x,palabras)
+        a.writerow(palabras) 
     
     data={"quote":frase,"character":personaje}
     if personaje == 'Homer Simpson':

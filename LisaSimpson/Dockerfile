@@ -1,13 +1,13 @@
 FROM python
 
-RUN mkdir MaggieSimpson
-COPY main.py ./MaggieSimpson/
-COPY requeriments.txt ./MaggieSimpson/
+RUN mkdir LisaSimpson
+COPY main.py ./LisaSimpson/
+COPY requeriments.txt ./LisaSimpson/
 
-RUN mkdir MaggieSimpson/Homer
-RUN mkdir MaggieSimpson/Lisa
-RUN mkdir MaggieSimpson/General
+RUN mkdir LisaSimpson/Homer
+RUN mkdir LisaSimpson/Lisa
+RUN mkdir LisaSimpson/General
 
-RUN pip install -r ./MaggieSimpson/requeriments.txt
+RUN pip install -r ./LisaSimpson/requeriments.txt
 
-CMD ["python","MaggieSimpson/main.py"]
+CMD ["python","LisaSimpson/main.py"]
