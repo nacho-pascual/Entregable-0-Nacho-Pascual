@@ -12,6 +12,7 @@ def timer():
     print(personaje)
     palabras={}
     x=frase.split()
+    
     palabras={}
     x=frase.split()
     for contador in range(len(x)):
