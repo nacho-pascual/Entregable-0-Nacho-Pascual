@@ -1,6 +1,8 @@
 import requests
 import time
 import csv
+import shutil
+
 
 
 def timer():
@@ -8,23 +10,17 @@ def timer():
     respuesta = requests.get('https://thesimpsonsquoteapi.glitch.me/quotes')
     frase=respuesta.json()[0]['quote']
     personaje=respuesta.json()[0]['character']
+    imagen=respuesta.json()[0]["image"]
     print(frase)
     print(personaje)
-    
-    
-    palabras={}
-    x=frase.split()
-    for contador in range(len(x)):
-      print(x[contador],":",(contador +1))
-      palabras[x[contador]]=(contador +1)
-    print(palabras)
-    time.sleep(3)
+    print(imagen)
+    url = imagen
 
-    
-    with open('LisaSimpson/contador.csv', 'a', newline='') as x:
-        a=csv.DictWriter(x,palabras)
-        a.writerow(palabras) 
-    
+    r = requests.get(imagen, stream=True)
+    with open(f'LisaSimpson/General/{personaje}.png', 'wb') as f:
+        r.raw.decode_content = True
+        shutil.copyfileobj(r.raw, f)
+
     data={"quote":frase,"character":personaje}
     if personaje == 'Homer Simpson':
       with open('LisaSimpson/Homer/mycsvfile.csv', 'a', newline='') as f:
