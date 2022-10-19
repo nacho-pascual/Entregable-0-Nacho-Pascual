@@ -48,6 +48,14 @@ def timer():
         veces='veces'
       
       #print(f'La palabra {key} se ha repetido {palabras[key]} {veces}')
+    with open('LisaSimpsonPruebas/contador.csv', 'w', newline='') as file:
+      fieldnames=['Palabras','N de repeticiones']
+      writer=csv.DictWriter(file,fieldnames=fieldnames)
+      if file.tell() == 0:
+        writer.writeheader()
+      for key in palabras:
+        writer.writerow({'Palabras':key,'N de repeticiones':palabras[key]}) 
+
 
     data={"quote":frase,"character":personaje}
     if personaje== ntpath.basename(personaje):

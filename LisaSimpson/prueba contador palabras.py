@@ -16,7 +16,7 @@ def timer():
     simbolos = ['¿','?','.','.',';',':','¡','!','"',',']
     for simbolo in simbolos:
       frase = frase.replace(simbolo,' ')
-    palabras_frase = frase.split()
+    palabras_frase = (frase.title()).split()
     print(palabras_frase)
     for palabra in palabras_frase:
       palabras[palabra] = palabras.get(palabra , 0) + 1    
@@ -26,14 +26,14 @@ def timer():
         veces = 'vez'
       else:
         veces='veces'
-      
       print(f'La palabra {key} se ha repetido {palabras[key]} {veces}')
+    print(palabras)
 
-    titulos_diccionario=palabras.keys()
+    with open('LisaSimpson/contador.csv', 'w', newline='') as file:
+      writer=csv.writer(file)
+      for key,value in palabras.items():
+        writer.writerow([key,value]) 
 
-    with open('LisaSimpson/contador.csv', 'a', newline='') as x:
-        writer=csv.DictWriter(x,fieldnames=titulos_diccionario)
-        writer.writeheader()
-        writer.writerow(palabras) 
+
     time.sleep(3) 
 timer()
