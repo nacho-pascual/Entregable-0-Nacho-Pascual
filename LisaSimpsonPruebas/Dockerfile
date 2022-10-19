@@ -1,13 +1,10 @@
 FROM python
 
 RUN mkdir LisaSimpson
-COPY main.py ./LisaSimpson/
-COPY requeriments.txt ./LisaSimpson/
+COPY main.py ./LisaSimpsonPruebas/
+COPY requeriments.txt ./LisaSimpsonPruebas/
 
-RUN mkdir LisaSimpson/Homer
-RUN mkdir LisaSimpson/Lisa
-RUN mkdir LisaSimpson/General
+RUN pip install -r ./LisaSimpsonPruebas/requeriments.txt
 
-RUN pip install -r ./LisaSimpson/requeriments.txt
 
-CMD ["python","LisaSimpson/main.py"]
+CMD ["python","LisaSimpsonPruebas/main.py"]

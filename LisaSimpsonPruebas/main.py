@@ -34,12 +34,11 @@ def timer():
 
     simbolos = ['¿','?','.','.',';',':','¡','!']
     for simbolo in simbolos:
-      x=frase.title()
-      x = x.replace(simbolo,' ')
-    palabras_frase = x.split()
+      frase = frase.replace(simbolo,' ')
+    palabras_frase = ((frase.lower()).title()).split()
     print(palabras_frase)
     for palabra in palabras_frase:
-      palabras[palabra] = palabras.get(palabra , 0) + 1    
+      palabras[palabra] = palabras.get(palabra , 0) + 1 
       
     for key in palabras:
       if palabras[key] == 1:
