@@ -28,12 +28,5 @@ def timer():
         veces='veces'
       
       print(f'La palabra {key} se ha repetido {palabras[key]} {veces}')
-
-    titulos_diccionario=palabras.keys()
-
-    with open('LisaSimpson/contador.csv', 'a', newline='') as x:
-        writer=csv.DictWriter(x,fieldnames=titulos_diccionario)
-        writer.writeheader()
-        writer.writerow(palabras) 
     time.sleep(3) 
 timer()
