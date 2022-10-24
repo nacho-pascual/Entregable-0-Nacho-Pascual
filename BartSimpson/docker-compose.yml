@@ -1,0 +1,9 @@
+version: '3'
+services: 
+  redis-server: 
+    image: 'Jupyther'
+  node-app:
+    restart: on-failure
+    build: .
+    
+    command: ["npm", "start"]

@@ -1,6 +1,6 @@
 FROM python
 
-RUN mkdir LisaSimpson
+RUN mkdir LisaSimpsonPruebas
 COPY main.py ./LisaSimpsonPruebas/
 COPY requeriments.txt ./LisaSimpsonPruebas/
 
