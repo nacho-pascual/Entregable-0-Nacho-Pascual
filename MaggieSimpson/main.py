@@ -10,22 +10,23 @@ def timer():
     personaje=respuesta.json()[0]['character']
     print(frase)
     print(personaje)
-    time.sleep(3) 
+    time.sleep(1) 
     
     data={"quote":frase,"character":personaje}
+    with open('MaggieSimpson/General/General.csv', 'a', newline='') as h: 
+      a=csv.DictWriter(h,data.keys())
+      a.writerow(data)
+    
     if personaje == 'Homer Simpson':
-      with open('MaggieSimpson/Homer/mycsvfile.csv', 'a', newline='') as f:
+      with open('MaggieSimpson/Homer/Homer.csv', 'a', newline='') as f:
         a=csv.DictWriter(f,data.keys())
         a.writerow(data) 
     elif personaje == 'Lisa Simpson':
-      with open('MaggieSimpson/Lisa/mycsvfile.csv', 'a', newline='') as g: 
+      with open('MaggieSimpson/Lisa/Lisa.csv', 'a', newline='') as g: 
         a=csv.DictWriter(g,data.keys())
         a.writerow(data)
-    else:
-      with open('MaggieSimpson/General/mycsvfile.csv', 'a', newline='') as h: 
-        a=csv.DictWriter(h,data.keys())
-        a.writerow(data)
-
+    
+     
 timer()
 
 

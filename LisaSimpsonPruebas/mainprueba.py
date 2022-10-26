@@ -24,10 +24,10 @@ def timer():
         raise
    
     url = imagen
-
+    nombreImagen = "LisaSimpsonPruebas/" + personaje +"/"+personaje+".png"
     r = requests.get(imagen, stream=True)
     if personaje== ntpath.basename(personaje):
-      with open(f'LisaSimpsonPruebas/{personaje}/imagen.png', 'wb') as f:
+      with open(nombreImagen, 'wb') as f:
           r.raw.decode_content = True
           shutil.copyfileobj(r.raw, f)      
 
