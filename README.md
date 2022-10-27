@@ -19,7 +19,7 @@ El nivel Maggie consistia en :
 * El fichero docker debe crear al menos las carpetas Lisa y Homer e inicialmente solo coger citas de ellos dos.
  
 <p align="center">
-<img src="https://www.clipartmax.com/png/small/59-596968_about-simpsons-lisa-and-maggie-png.png" alt="About - Simpsons Lisa And Maggie Png @clipartmax.com" width="150">
+<img src="https://pbs.twimg.com/media/BxbGBzDIUAAGmKU?format=png&name=900x900" width="300">
  </p>
 
 ### **Contenido del Ejercicio**:
@@ -67,7 +67,7 @@ El nivel Lisa consistia en :
 * El código debe crear de manera dinámica las carpetas con nuevos personajes.
 
 <p align="center">
-<img src="https://www.clipartmax.com/png/small/12-121828_lisa-simpson-gif-animado-lisa-simpson.png" alt="Lisa Simpson - Gif Animado Lisa Simpson @clipartmax.com" width="150">
+<img src="https://i.pinimg.com/originals/4c/84/6d/4c846d78baef3908be41cd593d24147e.jpg" width="150">
  </p>
  
  ### **Contenido del Ejercicio**:
@@ -110,6 +110,6 @@ El nivel Bart consistia en :
 * Docker-compose debe ser capaz de hacer build del contenedor original
 
 <p align="center">
-<img src="https://www.clipartmax.com/png/small/34-343469_the-simpsons-clipart-bart-simpson-bart-simpson-easy-drawing.png" alt="The Simpsons Clipart Bart Simpson - Bart Simpson Easy Drawing " width="150">
+<img src="https://www.pngplay.com/wp-content/uploads/6/Bart-Simpson-Cartoon-Transparent-File.png " width="300">
  </p>
 
