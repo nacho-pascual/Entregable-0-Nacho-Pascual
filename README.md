@@ -99,7 +99,7 @@ El nivel Lisa consistia en :
   more <csv>
   ```
 
-## Nivel Bart
+## Nivel Bart(En este ejercicio solo he sido capaz de realizar un notebook que mediante un archivo python que cree un csv con las palabras de las frases , cree una grafica con las 10 palabras mas repetidas que es capaz de actualizarse en tiempo real)
 
 El nivel Bart consistia en :
 
@@ -114,4 +114,11 @@ El nivel Bart consistia en :
 <p align="center">
 <img src="https://www.pngplay.com/wp-content/uploads/6/Bart-Simpson-Cartoon-Transparent-File.png " width="300">
  </p>
+ 
+ 
+ 
+  ### **Contenido del Ejercicio**:
+1. [DockerCompose]: levanta el contenedor .
+2. [main.py]: contiene el script de Python que ejecuta el código.
+3. [grafico_palabras.ipynb]: contiene el notebook que muestra el gráfico con las palabras mas repetidas.
 
