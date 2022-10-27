@@ -26,7 +26,7 @@ def timer():
     for simbolo in simbolos:
       frase = frase.replace(simbolo,' ')
     palabras_frase = ((frase.lower()).title()).split()
-    print(palabras_frase)
+    #print(palabras_frase)
     for palabra in palabras_frase:
       palabras[palabra] = palabras.get(palabra , 0) + 1    
       
@@ -36,7 +36,7 @@ def timer():
       else:
         veces='veces'
       
-      print(f'La palabra {key} se ha repetido {palabras[key]} {veces}')
+      #print(f'La palabra {key} se ha repetido {palabras[key]} {veces}')
     
     palabras_odenado = dict(sorted(palabras.items(), key=operator.itemgetter(1), reverse=True)[:10])
 
