@@ -6,7 +6,7 @@
 
 El ejercico propuesto , consiste en extraer información de la api de los Simpsons para efectuar diferentes acciones propuestas. Este se encuentra dividido en 3 niveles de dificultad: Maggie,Lisa y Bart. La imagen que he elegido al principio , representa la evolución del ejercicio.
 
-Para la resolución , vamos a utilizar los conceptos aprendedidos de :GIT,Unix,Python,Docker y Docker-Compose
+Para la resolución , vamos a utilizar los conceptos aprendedidos de :GIT,Unix,Python,Docker y Docker-Compose.
 
 ## Nivel Maggie
 
