@@ -99,7 +99,8 @@ El nivel Lisa consistia en :
   more <csv>
   ```
 
-## Nivel Bart(En este ejercicio solo he sido capaz de realizar un notebook que mediante un archivo python que cree un csv con las palabras de las frases , cree una grafica con las 10 palabras mas repetidas que es capaz de actualizarse en tiempo real)
+## Nivel Bart
+(En este ejercicio solo he sido capaz de realizar un notebook de jupyther que mediante un archivo python que cree un csv con las palabras de las frases y elabore una gráfica con las 10 palabras más repetidas siendo capaz de actualizarse en tiempo real)
 
 El nivel Bart consistia en :
 
