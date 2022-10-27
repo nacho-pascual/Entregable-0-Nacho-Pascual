@@ -17,21 +17,10 @@ def timer():
     frase=respuesta.json()[0]['quote']
     personaje=respuesta.json()[0]['character']
     imagen=respuesta.json()[0]["image"]
-    print(frase)
-    print(personaje)
+    #print(frase)
+    #print(personaje)
     
-    try:
-      os.mkdir(f'BartSimpson/{personaje}')
-    except OSError as e:
-      if e.errno != errno.EEXIST:
-        raise
-   
-    url = imagen
-    nombreImagen = "BartSimpson/" + personaje +"/"+personaje+".png"
-    r = requests.get(imagen, stream=True)
-    with open(nombreImagen, 'wb') as f:
-        r.raw.decode_content = True
-        shutil.copyfileobj(r.raw, f)
+ 
 
     simbolos = ['¿','?','.','.',';',':','¡','!','"',',']
     for simbolo in simbolos:
@@ -61,5 +50,5 @@ def timer():
           writer.writerow({'Palabras':key,'N de repeticiones':palabras[key]}) 
 
 
-    time.sleep(3) 
+    time.sleep(1) 
 timer()
